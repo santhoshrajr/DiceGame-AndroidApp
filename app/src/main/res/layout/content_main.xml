@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="my.santh.dicegame.dice50.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/imageView3"
+            android:src="@drawable/white"
+            android:adjustViewBounds="true"
+
+            android:maxHeight="225dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goal"
+            android:gravity="center"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+
+            android:textAlignment="gravity"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rule1"
+            android:id="@+id/textView2"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rule 2:Opponent lose points on same outcome"
+            android:id="@+id/textView3"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+
+
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+
+            android:src="@drawable/play"
+
+            android:onClick="onPlay"
+            android:adjustViewBounds="true"
+
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+
+
+            android:layout_gravity="center_horizontal"
+            android:background="@null" />
+    </LinearLayout>
+
+</RelativeLayout>
